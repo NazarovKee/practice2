@@ -1,8 +1,15 @@
 
 def nod(a, b):
-    # напишите ваше решение здесь
+    if a == b:
+        return a 
+    if b > a:
+        a, b = b, a
+    c = a % b 
+    if c == 0:
+        return b
+    else:  
+        return nod(b, c)
     return 0
-
 
 def nok(a, b):
     # напишите ваше решение здесь
