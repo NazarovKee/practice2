@@ -12,8 +12,7 @@ def nod(a, b):
     return 0
 
 def nok(a, b):
-    # напишите ваше решение здесь
-    return 0
+    return a * b // nod(a, b)
 
 
 if __name__ == '__main__':
